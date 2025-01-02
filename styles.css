@@ -21,11 +21,19 @@ h1 {
   font-size: 36px;
 }
 
+.textcenter {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 30px;
+  line-height: 1.25;
+}
+
 p {
   line-height: 1.5;
   font-size: 16px;
 }
-
 
 a {
   text-decoration: none;
@@ -179,11 +187,11 @@ section:nth-child(even) {
 
 /* ABOUT ME */
 
-#about-me {
+/* #about-me {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .about-me__info {
   display: flex;
@@ -307,7 +315,7 @@ section:nth-child(even) {
   }
 }
 
-/* TECH - STACK */
+/* SOFT SKILL */
 
 .language__img {
   width: 100%;
@@ -317,15 +325,19 @@ section:nth-child(even) {
 .language:hover .language__img {
   filter: brightness(80%);
   opacity: 0.86;
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 
 .language {
-  width: 25%;
+  width: 30%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
+  position: relative; */
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
+
 .language__img--wrapper {
   display: flex;
   justify-content: center;
@@ -341,14 +353,83 @@ section:nth-child(even) {
 }
 
 .language__name {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   transform: scale(0);
   transition: all 300ms;
   font-size: 20px;
   opacity: 0;
+  text-align: center;
+  text-wrap: wrap; */
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  text-wrap: wrap;
 }
+
 .language:hover .language__name {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* HARD SKILL */
+
+.hard__img {
+  width: 100%;
+  max-width: 100px;
+  transition: all 300ms;
+}
+.hard:hover .hard__img {
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform: scale(1.1);
+}
+
+.hard {
+  width: 14%;
+  display: flex;
+  /* justify-content: center;
+  position: relative; */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hard__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+}
+
+.hard__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hard__name {
+  /* position: absolute;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  font-size: 20px;
+  opacity: 0;
+  text-align: center;
+  text-wrap: wrap; */
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 300ms;
+}
+
+.hard:hover .hard__name {
   transform: scale(1);
   opacity: 1;
 }
